@@ -1,0 +1,12 @@
+#!/bin/bash
+
+javac Main.java
+
+if [[ $? -eq 0 ]]; 
+then
+    java Main $1 $2 $3 
+    echo "Script finished."
+else
+    echo "Compilation failed. Exiting..."
+    exit -1
+fi
