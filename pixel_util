@@ -1,6 +1,6 @@
 #!/bin/bash
 
-javac Main.java
+javac *.java
 
 if [[ $? -eq 0 ]]; 
 then
